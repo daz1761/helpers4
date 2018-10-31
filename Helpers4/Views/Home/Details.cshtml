@@ -1,0 +1,76 @@
+﻿@model Helpers4.Models.Employee
+
+@{
+    Layout = "~/Views/Shared/_SiteMaster.cshtml";
+}
+
+<h2>Details</h2>
+<h3>MVC Part 40</h3>
+
+<p>This demo is for the <code>DisplayName</code>, <code>DisplayFormat</code>, and <code>ScaffoldColumn</code> attributes in MVC</p>
+
+<p>
+    <fieldset>
+        <legend><b>Employee</b></legend>
+
+        @*<div>
+            @Html.DisplayNameFor(model => model.FullName)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.FullName)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.Gender)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Gender)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.Age)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Age)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.HireDate)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.HireDate)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.Salary)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Salary)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.PersonalWebSite)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.PersonalWebSite)
+        </div>*@
+
+        <!-- WE COULD JUST DO THIS INSTEAD!-->
+        @Html.DisplayForModel()
+
+    </fieldset>
+</p>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id })
+</p>
+<p>
+    @Html.ActionLink("Back To List", "Index")
+</p>
