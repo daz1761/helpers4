@@ -160,6 +160,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Employee.cs">
       <DependentUpon>SampleDBContext.tt</DependentUpon>
     </Compile>
@@ -232,6 +233,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Home\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

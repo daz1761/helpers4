@@ -1,0 +1,16 @@
+﻿@model Helpers4.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<div>
+    <h2>Edit</h2>
+    @using (@Html.BeginForm())
+    {
+        @Html.EditorForModel()
+        <br/>
+        <br/>
+        <input type="submit" value="Save"/>
+    }
+</div>
