@@ -17,7 +17,7 @@ namespace Helpers4
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            System.Web.Optimization.BundleTable.EnableOptimizations = true;
+            //System.Web.Optimization.BundleTable.EnableOptimizations = true;
         }
     }
 }

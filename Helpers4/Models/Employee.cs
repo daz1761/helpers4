@@ -22,5 +22,7 @@ namespace Helpers4.Models
         public string EmailAddress { get; set; }
         public Nullable<int> Salary { get; set; }
         public string PersonalWebSite { get; set; }
+        public string Photo { get; set; }
+        public string AlternateText { get; set; }
     }
 }

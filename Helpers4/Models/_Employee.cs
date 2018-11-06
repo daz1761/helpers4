@@ -33,7 +33,7 @@ namespace Helpers4.Models
         [DisplayFormat(DataFormatString = "{0:d}")]
         public DateTime? HireDate { get; set; }
 
-        [DisplayFormat(NullDisplayText ="Gender Not Specified - maybe this is a transgender cunt")]
+        [DisplayFormat(NullDisplayText ="Gender Not Specified")]
         public string Gender { get; set; }
 
         // hide column if set to false

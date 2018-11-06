@@ -5,21 +5,21 @@
 }
 
 <h2>Details</h2>
-<h3>MVC Part 40, 41, 42, and 43</h3>
+<h3>MVC Part 40, 41, 42, 43, 44, 45, and 47</h3>
 
 <p>Part 40 is for the <code>DisplayName</code>, <code>DisplayFormat</code>, and <code>ScaffoldColumn</code> attributes in MVC</p>
-
 <p>Part 41 is for the <code>datatype</code> and <code>displaycolumn</code> attributes in MVC</p>
-
 <p>Part 42 is for opening a page in a new browser</p>
-
 <p>Part 43 is for the <code>Hiddeninput</code> and <code>readonly</code> attributes in MVC</p>
+<p>Part 44 - <code>Html.display()</code> and <code>Html.edit()</code> templated helpers</p>
+<p>Part 45 - customize <code>Html.display()</code> and <code>Html.edit()</code> templates</p>
+<p>Part 47 - displaying images in MVC</p>
 
 <p>
     <fieldset>
         <legend><b>Employee</b></legend>
 
-        @*<div>
+        <div>
             @Html.DisplayNameFor(model => model.FullName)
         </div>
         <div>
@@ -66,10 +66,22 @@
         </div>
         <div>
             @Html.DisplayFor(model => model.PersonalWebSite)
-        </div>*@
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.Photo)
+        </div>
+        <div>
+            <img src="@Url.Content(Model.Photo)" alt="@Model.AlternateText" />
+        </div>
 
         <!-- WE COULD JUST DO THIS INSTEAD!-->
-        @Html.DisplayForModel()
+        @*@Html.DisplayForModel()*@  <!--used with strongly typed views - walks through each prop and renders them out-->
+        @*@Html.Display("key")*@     <!--for not strongly typed views, this will use ViewData['key'], then walk through each prop and renders them out-->
+        <!-- Also bare these in mind too-->
+        @*@Html.Editor("key")
+        @Html.EditorFor(model => model)
+        @Html.EditorForModel()*@
 
     </fieldset>
 </p>

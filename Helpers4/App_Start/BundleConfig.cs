@@ -13,7 +13,9 @@ namespace Helpers4
             // stay away from virtual paths that are similar to the actual paths e.g. use Bundles/css etc.
             bundles.Add(new StyleBundle("~/Content/Allcss").Include(
                       "~/Content/css/foundation.css",
-                      "~/Content/css/app.css"));
+                      "~/Content/css/app.css",
+                      "~/Content/css/jquery-ui.css",
+                      "~/Content/css/Site.css"));
         }
     }
 }

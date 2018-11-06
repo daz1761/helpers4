@@ -1,8 +1,14 @@
 ﻿@model Helpers4.Models.Employee
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_SiteMaster.cshtml";
 }
+
+<script type="text/javascript">
+    $(function () {
+        $("input:text.date").datepicker({ dateFormat: "dd/mm/yy" });
+    });
+</script>
 
 <div>
     <h2>Edit</h2>
